@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+main {
+    font-family: 'Poppins', sans-serif;
+    margin: 120px;
+}
+
+
+/* style to influencer detail */
+
+.influencer-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info {
+    border: 2px solid rgb(83, 75, 194);
+}
+
+.product-info-headng {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+}
+.product-img {
+    width: 475px;
+    height: 475px;
+    background-image: url(/influencer-gear-main/images/Circle\ design.svg);
+    transform: scale(.75);
+    /* border: 2px solid rgb(228, 77, 77); */
+}
+
+}
+.product-img img {
+    transform: scale(.80);
+}
