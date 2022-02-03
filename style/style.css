@@ -1,5 +1,24 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+        /* animation */
+        
+        @keyframes blinking {
+            0% {
+                background-color: #e67409;
+            }
+            25% {
+                background-color: #ef6262;
+            }
+            50% {
+                background-color: #d43c28;
+            }
+            75% {
+                background-color: #da4c82;
+            }
+            100% {
+                background-color: #E02C6D;
+            }
+        }
         /* header  */
         
         nav {
@@ -38,12 +57,13 @@
         /* buttun design */
         
         .butn-1 {
-            background-color: #E02C6D;
+            /* background-color: #E02C6D; */
             width: 180px;
             height: 44px;
             border-radius: 41px;
             border: none;
             font-weight: 600;
+            animation: blinking 5s ease-in-out 0s infinite;
         }
         
         .butn-1 a {
@@ -69,6 +89,12 @@
             margin-top: 80px;
             margin-left: 30px;
             width: 80%;
+            transition: width .5s linear;
+            /*transition to section one product image*/
+        }
+        
+        .product-img img:hover {
+            width: 100%;
         }
         /* ....................------------------>>>>>>>>>>>>>
 section two brand & companies stylesheet------------------------*/
@@ -218,17 +244,36 @@ section two brand & companies stylesheet------------------------*/
         }
         /* footer design */
         
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
         .socialicon {
             size: 5px;
             height: 30px;
             width: 30px;
-            border-radius: 100%;
             text-align: center;
+            margin-top: 5px;
+        }
+        
+        .insta a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .insta {
+            background-color: rgba(128, 124, 123, 0.199);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px;
         }
         
         footer {
             padding-top: 36px;
-            background-color: #E02C6D;
+            background-color: rgb(3, 2, 8);
             color: white;
             text-align: center;
         }
@@ -263,6 +308,10 @@ section two brand & companies stylesheet------------------------*/
                 width: 200px;
                 height: 190px;
                 padding-right: 100px;
+                transition: none;
+            }
+            .product-img img:hover {
+                width: 200px;
             }
             .product-info {
                 height: 300px;
