@@ -1,37 +1,300 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-main {
-    font-family: 'Poppins', sans-serif;
-    margin: 120px;
-}
-
-
-/* style to influencer detail */
-
-.influencer-products {
-    display: flex;
-    justify-content: space-between;
-}
-
-.product-info {
-    border: 2px solid rgb(83, 75, 194);
-}
-
-.product-info-headng {
-    font-size: 35px;
-    font-weight: 900;
-}
-
-
-}
-.product-img {
-    width: 475px;
-    height: 475px;
-    background-image: url(/influencer-gear-main/images/Circle\ design.svg);
-    transform: scale(.75);
-    /* border: 2px solid rgb(228, 77, 77); */
-}
-
-}
-.product-img img {
-    transform: scale(.80);
-}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+        /* header  */
+        
+        nav {
+            margin-left: 120px;
+            font-size: 24px;
+            list-style: none;
+        }
+        
+        main {
+            font-family: 'Forum', cursive;
+            margin: 120px;
+        }
+        /* style to influencer detail */
+        
+        .influencer-product {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .product-info {
+            width: 50%;
+            height: 350px;
+            padding-top: 15%;
+            text-align: left;
+        }
+        
+        .product-info p {
+            font-family: serif;
+            font-weight: 500;
+        }
+        
+        .product-info-headng {
+            font-size: 52px;
+            font-weight: 900;
+        }
+        /* buttun design */
+        
+        .butn-1 {
+            background-color: #E02C6D;
+            width: 180px;
+            height: 44px;
+            border-radius: 41px;
+            border: none;
+            font-weight: 600;
+        }
+        
+        .butn-1 a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .fa-arrow-right {
+            width: 20px;
+        }
+        
+        .product-img {
+            background-image: url(/influencer-gear-main/images/Circle\ design.svg);
+            background-size: 400px;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 500px;
+            padding-left: 30px;
+            background-position: center, center;
+        }
+        
+        .product-img img {
+            margin-top: 80px;
+            margin-left: 30px;
+            width: 80%;
+        }
+        /* ....................------------------>>>>>>>>>>>>>
+section two brand & companies stylesheet------------------------*/
+        
+        .sec-2 {
+            margin-top: 100px;
+        }
+        
+        .brands {
+            display: flex;
+            flex-wrap: wrap;
+            /* making responsive */
+            border-top: 1.5px solid rgba(0, 0, 0, 0.068);
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.068);
+        }
+        
+        .brand-img {
+            padding: 20px;
+        }
+        /* --------------
+        ------------------------------------------
+        Popular Collection design -----------
+        */
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        .popular-collections {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+        
+        .pop-collection {
+            background-color: white;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+        
+        .pop-product-img,
+        .pop-product-info {
+            transform: scale(.9);
+        }
+        
+        #pop-collection-price {
+            font-size: 24px;
+            color: rgba(0, 0, 0, 0.87);
+            font-weight: 200;
+        }
+        
+        .fa-star,
+        .fa-star-half-alt {
+            color: #FB8200;
+        }
+        
+        .pop-txt-ratting {
+            color: #5E6366;
+            font-weight: 900;
+        }
+        
+        .pop-txt {
+            color: #787885;
+        }
+        /* ------------------
+        button design--------- */
+        
+        .btn-2 {
+            color: #E02C6D;
+            border: none;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 90%;
+            font-weight: 800;
+        }
+        /* -----------------------------
+        section 4 stylesheet
+------------------------- */
+        
+        .mega-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .catagories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 80px;
+            grid-gap: 10%;
+        }
+        
+        .category {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            ;
+        }
+        
+        .category-img img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 40px white;
+        }
+        
+        .category-info h2 {
+            font-size: 20px;
+            font-weight: 400;
+            padding-left: 20px;
+            font-family: 'Forum', cursive;
+        }
+        /*----------
+--------- pop up menu ----------- */
+        
+        .pop-up-menu {
+            display: none;
+        }
+        
+        .category-img:hover>.pop-up-menu {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            position: absolute;
+            background-color: white;
+            transform: scale(.75);
+            transform: translateY(5px);
+        }
+        
+        .pop-up-menu li {
+            list-style: none;
+        }
+        
+        .pop-up-menu a {
+            text-decoration: none;
+            color: lightslategrey;
+        }
+        
+        .pop-up-menu a:hover {
+            color: black;
+        }
+        /* footer design */
+        
+        .socialicon {
+            size: 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            text-align: center;
+        }
+        
+        footer {
+            padding-top: 36px;
+            background-color: #E02C6D;
+            color: white;
+            text-align: center;
+        }
+        /* ---------------responsicve website 
+        ------------------- */
+        
+        @media (max-width: 320px) {
+            nav {
+                display: flex;
+                justify-content: center;
+                margin: 0px;
+                font-size: 18px;
+            }
+            /* section 1 */
+            .influencer-product {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .product-img {
+                background-image: url(/influencer-gear-main/images/Circle\ design.svg);
+                background-size: 250px;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 320px;
+                background-position-x: center;
+                order: 1;
+            }
+            .product-img img {
+                margin-top: 60px;
+                width: 200px;
+                height: 190px;
+                padding-right: 100px;
+            }
+            .product-info {
+                height: 300px;
+                width: 300px;
+                text-align: center;
+                order: 2;
+            }
+            /* section 2 */
+            .brand-img {
+                transform: scale(.5);
+            }
+            /* section 3 */
+            .popular-collections {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+            .pop-collection {
+                transform: scale(.75);
+            }
+            /* section 4 */
+            .catagories {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+            .category {
+                transform: scale(.6);
+                flex-grow: 1;
+                position: relative;
+            }
+            .category-img:hover>.pop-up-menu {
+                display: none;
+            }
+        }
