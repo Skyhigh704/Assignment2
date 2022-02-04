@@ -76,7 +76,7 @@
         }
         
         .product-img {
-            background-image: url(/influencer-gear-main/images/Circle\ design.svg);
+            background-image: url("/influencer-gear-main/images/circle-design.svg");
             background-size: 400px;
             background-repeat: no-repeat;
             width: 50%;
