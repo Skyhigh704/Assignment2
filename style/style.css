@@ -107,6 +107,8 @@ section two brand & companies stylesheet------------------------*/
             display: flex;
             flex-wrap: wrap;
             /* making responsive */
+            justify-content: center;
+            align-items: center;
             border-top: 1.5px solid rgba(0, 0, 0, 0.068);
             border-bottom: 1.5px solid rgba(0, 0, 0, 0.068);
         }
@@ -167,12 +169,16 @@ section two brand & companies stylesheet------------------------*/
         button design--------- */
         
         .btn-2 {
-            color: #E02C6D;
             border: none;
             background-color: white;
             margin-top: 40px;
             margin-left: 90%;
             font-weight: 800;
+        }
+        
+        .btn-2 a {
+            text-decoration: none;
+            color: #E02C6D;
         }
         /* -----------------------------
         section 4 stylesheet
@@ -279,8 +285,9 @@ section two brand & companies stylesheet------------------------*/
         }
         /* ---------------responsicve website 
         ------------------- */
+        /* for mobile view */
         
-        @media (max-width: 320px) {
+        @media only screen and (min-width:250px) and (max-width: 610px) {
             nav {
                 display: flex;
                 justify-content: center;
@@ -293,6 +300,7 @@ section two brand & companies stylesheet------------------------*/
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 350px;
             }
             .product-img {
                 background-image: url(/influencer-gear-main/images/Circle\ design.svg);
@@ -345,5 +353,74 @@ section two brand & companies stylesheet------------------------*/
             }
             .category-img:hover>.pop-up-menu {
                 display: none;
+            }
+        }
+        /* responsive for tablet */
+        
+        @media only screen and (min-width:611px) and (max-width:1007px) {
+            nav {
+                display: flex;
+                justify-content: center;
+                margin: 0px;
+                font-size: 18px;
+            }
+            /* section 1 */
+            .influencer-product {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 200px;
+            }
+            .product-img {
+                background-image: url(/influencer-gear-main/images/Circle\ design.svg);
+                background-size: 250px;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 320px;
+                background-position-x: center;
+                order: 1;
+            }
+            .product-img img {
+                margin-top: 60px;
+                width: 200px;
+                height: 190px;
+                padding-right: 100px;
+                transition: transform 1s linear;
+            }
+            .product-img img:hover {
+                transform: scale(1.25);
+                width: 200px;
+            }
+            .product-info {
+                height: 300px;
+                width: 300px;
+                text-align: center;
+                order: 2;
+            }
+            /* section 2 */
+            .brand-img {
+                transform: scale(.75);
+            }
+            /* section 3 */
+            .popular-collections {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0;
+            }
+            .pop-collection {
+                transform: scale(.75);
+            }
+            /* section 4 */
+            .mega-menu {
+                display: flex;
+                justify-content: flex-start;
+            }
+            .category {
+                display: block;
+                margin-bottom: 150px;
+            }
+            .category-img img {
+                transform: translateX(50%);
             }
         }
